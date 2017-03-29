@@ -1,10 +1,17 @@
 import React from 'react';
 import {} from 'react-native';
+import NetUtils from './NetUtils'
 
 
 export default class UsersLogic extends React.Component {
     callBack(responseJson)
     {
+
+    }
+    test(param1,param2){
+        url = 'https://amaet.top/mock/my';
+        params = {'name':param1,'pass':param2};
+        NetUtils.get(url,'',this.callBack);
 
     }
     login(username,password){
